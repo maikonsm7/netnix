@@ -1,19 +1,23 @@
-import styles from './SerieCard.module.css'
 import { useNavigate } from 'react-router-dom'
+import styles from './SerieCard.module.css'
 
-const SerieCard = ({series}) => {
+const SerieCard = ({ series }) => {
     const navigate = useNavigate()
 
     const click = (index) => {
         navigate(`/series/${index}`)
     }
-    return(
-        <div>
-            {series.map( (serie, index) => (
-                <div key={serie.id} className={styles.card} onClick={() => click(index)}>
-                    <img src={serie.src} alt={serie.title}/>
-                    <h4>{serie.title}</h4>
-                    <p>{serie.qtdSe} Temporadas</p>
+    return (
+        <div className="row row-cols-2 row-cols-md-4">
+            {series.map((serie, index) => (
+                <div className="col p-2">
+                    <div key={serie.id} className={`card ${styles.customCard}`} onClick={() => click(index)}>
+                        <img src={serie.src} className="card-img-top rounded-top mx-auto d-block mt-2" alt={serie.title} />
+                        <div className="card-body">
+                            <span className="card-text fw-bold">{serie.title}</span> <br/>
+                            <span className="text-muted">{serie.qtdSe} Temporadas</span>
+                        </div>
+                    </div>
                 </div>
             ))}
         </div>

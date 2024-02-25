@@ -1,7 +1,7 @@
 const Episodio = () => {
     return(
         <div>
-            <p>ok</p>
+            <p>Reproduzir...</p>
         </div>
     )
 }

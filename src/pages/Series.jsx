@@ -6,7 +6,7 @@ const Series = () => {
     const {contextSeries} = useContext(SeriesListContext)
     return(
         <div>
-            <h3>Series</h3>
+            <h3>Séries</h3>
             <SeriesCard series={contextSeries}/>
         </div>
     )

@@ -1,17 +1,12 @@
-.card{
-    border: 1px solid rgb(190, 190, 190);
-    border-radius: 8px;
+.customCard{
     width: 200px;
-    padding: 5px;
-    margin: 5px;
+    height: 300px;
     cursor: pointer;
 }
-img{
-    width: 200px;
-    height: 200px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
+.customCard:hover{
+    border: 1px solid gray;
 }
-p{
-color: gray;
+.customCard img{
+    width: 180px;
+    height: 210px;
 }

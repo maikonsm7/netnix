@@ -1,4 +1,3 @@
-import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import NavBar from './components/NavBar';
@@ -10,7 +9,7 @@ import { SeriesContext } from './hooks/SeriesContext';
 
 function App() {
   return (
-    <div className="App">
+    <div className="container">
       <SeriesContext>
       <BrowserRouter>
       <NavBar />
