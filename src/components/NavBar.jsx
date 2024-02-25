@@ -4,7 +4,7 @@ const NavBar = () => {
     return(
         <div>
             <nav>
-            <NavLink to={'/'}>Series</NavLink>
+            <NavLink to={'/series'}>Series</NavLink>
             <NavLink to={'/filmes'}>Filmes</NavLink>
             </nav>
         </div>
