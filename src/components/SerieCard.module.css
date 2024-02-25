@@ -6,7 +6,9 @@
 .customCard:hover{
     border: 1px solid gray;
 }
-.customCard img{
+.img{
     width: 180px;
     height: 210px;
+    background-size: cover; /* Garante que a imagem cubra completamente o elemento */
+    background-position: center; /* Alinha a imagem ao centro do elemento */
 }

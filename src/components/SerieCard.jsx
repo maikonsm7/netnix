@@ -12,7 +12,8 @@ const SerieCard = ({ series }) => {
             {series.map((serie, index) => (
                 <div className="col p-2">
                     <div key={serie.id} className={`card ${styles.customCard}`} onClick={() => click(index)}>
-                        <img src={serie.src} className="card-img-top rounded-top mx-auto d-block mt-2" alt={serie.title} />
+                    <div className={`rounded-top mx-auto d-block mt-2 ${styles.img}`} style={{ backgroundImage: `url(${serie.src})`}}></div>
+                        {/* <img src={serie.src} className="card-img-top rounded-top mx-auto d-block mt-2" alt={serie.title} /> */}
                         <div className="card-body">
                             <span className="card-text fw-bold">{serie.title}</span> <br/>
                             <span className="text-muted">{serie.qtdSe} Temporadas</span>
