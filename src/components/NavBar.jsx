@@ -4,8 +4,8 @@ const NavBar = () => {
     return(
         <div>
             <nav>
-            <NavLink to={'/'}>Home</NavLink>
-            <NavLink to={'/about'}>Sobre</NavLink>
+            <NavLink to={'/'}>Series</NavLink>
+            <NavLink to={'/filmes'}>Filmes</NavLink>
             </nav>
         </div>
     )

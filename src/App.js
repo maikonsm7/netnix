@@ -2,8 +2,8 @@ import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import NavBar from './components/NavBar';
-import Home from './pages/Home'
-import About from './pages/About'
+import Series from './pages/Series'
+import Filmes from './pages/Filmes'
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path={'/'} element={<Home />}/>
-        <Route path={'/about'} element={<About />}/>
+        <Route path={'/'} element={<Series />}/>
+        <Route path={'/filmes'} element={<Filmes />}/>
         </Routes>
       </BrowserRouter>
     </div>
