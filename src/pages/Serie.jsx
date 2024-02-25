@@ -9,7 +9,7 @@ const Serie = () => {
 
     return (
         <div className="mb-4">
-            <div className="card mb-3 border-0">
+            <div className="card mb-4 border-0">
                 <div className="row g-0">
                     <div className="col-md-3 text-center">
                         <img src={contextSeries[index].src} className={`img-fluid rounded ${styles.img}`} alt={contextSeries[index].title} />
@@ -19,12 +19,13 @@ const Serie = () => {
                             <h4 className="card-title">{contextSeries[index].title}</h4>
                             <p className="card-text">Sinopse da série Sinopse da série Sinopse da série Sinopse da série Sinopse da série</p>
                             <p className="card-text"><small className="text-body-secondary">Lançamento 2020</small></p>
-                            <Link to="/series">Voltar</Link>
+                            <Link className="btn btn-success" to="/series">Voltar</Link>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <h4>Temporadas</h4>
 
             <div className="accordion" id="accordionSeries">
                 {[...Array(contextSeries[index].qtdSe)].map((item, index) => (

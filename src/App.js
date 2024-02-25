@@ -13,12 +13,14 @@ function App() {
       <SeriesContext>
       <BrowserRouter>
       <NavBar />
+      <div style={{marginTop: '100px'}}>
       <Routes>
         <Route path={'/series'} element={<Series />}/>
         <Route path={'/filmes'} element={<Filmes />}/>
         <Route path={'/series/:index'} element={<Serie />}/>
         <Route path={'/series/:index/:temporada/:episodio'} element={<Episodio />}/>
         </Routes>
+      </div>
       </BrowserRouter>
       </SeriesContext>
     </div>
