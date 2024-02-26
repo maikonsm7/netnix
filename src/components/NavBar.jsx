@@ -11,6 +11,8 @@ const NavBar = () => {
                 <ul className="nav nav-pills">
                     <li className="nav-item"><NavLink to={'/series'} className="nav-link">Séries</NavLink></li>
                     <li className="nav-item"><NavLink to={'/filmes'} className="nav-link">Filmes</NavLink></li>
+                    <li className="nav-item"><NavLink to={'/admin/series'} className="nav-link">ADM Séries</NavLink></li>
+                    <li className="nav-item"><NavLink to={'/admin/filmes'} className="nav-link">ADM Filmes</NavLink></li>
                 </ul>
             </header>
         </div>
